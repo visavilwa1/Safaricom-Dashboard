@@ -1,0 +1,8 @@
+{
+  "liveServer.settings.port": 5501,
+  "livePreview.defaultPreviewPath": "/dashboard.html",
+  "editor.defaultFormatter": "bradlc.vscode-tailwindcss",
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
+}

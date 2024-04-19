@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #edecef;
+}
+
+.image img {
+    width: 200px;
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    outline: none;
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.bi-search {
+    font-size: 1.5rem;
+    color: #777;
+    margin-left: -30px;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    color: #777;
+    margin-left: 10px;
+}
+
+.icons i:hover {
+    font-size: 1.5rem;
+    color: #81e489;
+    margin-left: 10px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #12c344;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 6px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+
+
+.icons img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 300px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+
+}
+
+.image img {
+    width: 150px;
+
+}
+
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+.sidebar-container {
+    background-color: #f4f4f4;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 20px;
+
+}
+
+.sidebar {
+    padding: 10px;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+
+}
+
+.sidebar-h2 {
+    margin-top: 20px;
+    color: #666;
+
+}
+
+.sidebar img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+.sidebar a {
+    display: block;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a.active {
+    background-color: #23c55f;
+    color: white;
+    border-radius: 10px;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #23c55f;
+    color: white;
+    border-radius: 10px;
+}
+
+.sidebar a i {
+    margin-right: 8px;
+}
+
+.sidebar-h2 {
+    margin: 20px 0;
+    color: #a3a2aa;
+    font-size: 1em;
+    text-transform: uppercase;
+
+}
+
+.h2 {
+    margin: 30px;
+    padding: 10px;
+    font-size: 20px;
+    color: #89888e;
+}
+
+.h2 span {
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.h3 {
+    font-weight: bold;
+    margin-left: 100px;
+    font-size: 24px;
+}
+
+.main-content {
+    padding: 20px;
+    width: calc(100% - 300px);
+    /* Adjust the width according to your sidebar width */
+    float: right;
+    background-color: #f4f4f4;
+    /* Light gray background color */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Box shadow for depth */
+}
+
+.h2 {
+    margin: 0;
+    /* Reset margin */
+    padding: 10px 0;
+    /* Add padding */
+    font-size: 24px;
+    color: #333;
+    /* Text color */
+}
+
+.h2 span {
+    color: #23c55f;
+    /* Highlighted text color */
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767.98px) {
+    .main-content {
+        width: 100%;
+        /* Reset width for small screens */
+        float: none;
+        /* Remove float for small screens */
+        border-radius: 0;
+        /* Remove border radius for small screens */
+        box-shadow: none;
+        /* Remove box shadow for small screens */
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .sidebar {
+        width: 100%;
+        max-width: 300px;
+        position: static;
+        height: auto;
+        overflow-y: visible;
+        top: 0;
+
+    }
+
+    .main-content {
+        margin-left: 0;
+
+    }
+}
