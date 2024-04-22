@@ -201,29 +201,23 @@ header {
 .main-content {
     padding: 20px;
     width: calc(100% - 300px);
-    /* Adjust the width according to your sidebar width */
     float: right;
     background-color: #f4f4f4;
-    /* Light gray background color */
     border-radius: 10px;
-    /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Box shadow for depth */
+
 }
 
 .h2 {
     margin: 0;
-    /* Reset margin */
     padding: 10px 0;
-    /* Add padding */
     font-size: 24px;
     color: #333;
-    /* Text color */
+
 }
 
 .h2 span {
     color: #23c55f;
-    /* Highlighted text color */
     font-weight: bold;
 }
 
@@ -275,13 +269,10 @@ header {
 @media screen and (max-width: 767.98px) {
     .main-content {
         width: 100%;
-        /* Reset width for small screens */
         float: none;
-        /* Remove float for small screens */
         border-radius: 0;
-        /* Remove border radius for small screens */
         box-shadow: none;
-        /* Remove box shadow for small screens */
+
     }
 }
 

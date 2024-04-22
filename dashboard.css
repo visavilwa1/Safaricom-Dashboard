@@ -366,11 +366,8 @@ hr {
 
 #user-traffic-heading {
   font-size: 24px;
-  /* Adjust the font size as needed */
   color: #333;
-  /* Adjust the color */
   margin-bottom: 5px;
-  /* Add spacing between heading and number */
 }
 
 #user-traffic-number {
@@ -395,26 +392,21 @@ hr {
 .item {
   flex: 1 1 calc(33.33% - 10px);
   width: 20px;
-  /* Three items per row */
   background-color: #fff;
-  /* Background color for chart items */
   border-radius: 5px;
-  /* Rounded corners */
   padding: 0;
-  /* Padding inside chart items */
   gap: 10px;
   text-align: center;
-  /* Center align text */
 }
 
 .label {
   font-weight: bold;
-  /* Bold font for labels */
+
 }
 
 .value {
   color: #555;
-  /* Color for values */
+
 }
 
 
