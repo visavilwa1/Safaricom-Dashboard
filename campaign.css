@@ -93,17 +93,30 @@ header {
     padding: 20px;
 }
 
-.sidebar-container {
-    background-color: #f4f4f4;
-    width: 300px;
-    height: 100%;
+.sidebar .sidebar-image {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.sidebar .sidebar-image {
+    width: 200px;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.sidebar {
+    background-color: #e3e6e9;
+    height: 100vh;
+    padding: 20px;
+    width: 250px;
+    position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
     z-index: 1;
-    overflow-x: hidden;
-    padding-top: 20px;
-    border-radius: 20px;
-
 }
 
 .sidebar {
@@ -212,6 +225,51 @@ header {
     color: #23c55f;
     /* Highlighted text color */
     font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0x;
+    margin-left: 35px;
+    margin-right: 50px;
+}
+
+.grid-item {
+    background-color: #fefffe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:
+        20px 20px 40px #efeef1;
+}
+
+.grid-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.grid-item ul li span {
+    font-weight: bold;
+    font-size: 30px;
+    color: #6c7d92;
+}
+
+.grid-item ul li {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #a8b3be;
+}
+
+.grid-item ul li p {
+    display: inline;
+    font-size: 11px;
+    color: #666;
+}
+
+.grid-item ul li i.bi-arrow-up {
+    margin-right:
+        5px;
+    color: black;
 }
 
 @media screen and (max-width: 767.98px) {
