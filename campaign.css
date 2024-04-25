@@ -206,70 +206,56 @@ header {
 
 }
 
-.grid-item ul li img {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 5px;
-
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 0px;
-
-}
-
-.grid-item {
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-
-
-.grid-item ul {
-    list-style: none;
-    padding: 0;
-
-}
-
-
-.grid-item ul li {
-    display: flex;
-    color: black;
-    font-weight: bold;
-    align-items: center;
-    margin-bottom: 5px;
-
-}
-
-
-.grid-item ul li img {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-}
-
-
-.grid-item ul li span {
-    color: #333;
-
-}
-
 
 .followers-container {
-
-    max-width: 800px;
+    max-width: 1000px;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     margin-top: 20px;
     border: 1px solid #ededf1;
 
 }
 
-.socials-container {
+.influencial-container {
+    display: flex;
+    float: right;
+    display: flex;
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #ededf1;
+    margin-right: 5em;
+    max-height: 800px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.influencial-container div {
+    margin-bottom: 10px;
+    /* Add some space between each user */
+}
+
+/* Style for the username */
+.influencial-container div p:first-child {
+    font-weight: bold;
+    /* Make the username bold */
+    color: #333;
+    /* Set color */
+}
+
+/* Style for the follower count */
+.influencial-container div p:last-child {
+    color: #666;
+    /* Set color */
+    font-size: 0.8em;
+    /* Adjust font size */
+}
+
+.socials-container1 {
     display: flex;
     max-width: 800px;
     background-color: #ffffff;
@@ -279,7 +265,7 @@ header {
     border: 1px solid #ededf1;
 }
 
-.socials-container div {
+.socials-container1 div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,7 +274,7 @@ header {
 
 }
 
-.socials-container div:last-child {
+.socials-container1 div:last-child {
     margin-right: 0;
     /* Remove margin from the last social media item */
 }
@@ -453,7 +439,7 @@ li {
 
 .socials-container div:last-child {
     margin-right: 0;
-    /* Remove margin from the last social media item */
+
 }
 
 .socials-container div img {
