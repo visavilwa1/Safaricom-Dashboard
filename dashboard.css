@@ -69,15 +69,10 @@ header {
 
 .icons img {
   width: 50px;
-  /* Set the width of the image */
   height: 50px;
-  /* Set the height of the image */
   border-radius: 50%;
-  /* Make it circular */
   border: 2px solid #fff;
-  /* Add a border */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Add a subtle shadow */
 }
 
 
@@ -91,7 +86,6 @@ header {
 .sidebar .sidebar-image {
   width: 200px;
   height: auto;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
 

@@ -73,7 +73,7 @@ header {
 
 .sidebar {
     background-color: #f8f9fa;
-    border-radius: 30px;
+
     padding: 20px;
     width: 300px;
     position: fixed;
@@ -85,6 +85,7 @@ header {
 
 }
 
+
 .image img {
     width: 150px;
 
@@ -95,36 +96,34 @@ header {
     padding: 20px;
 }
 
-.sidebar-container {
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    width: 250px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
-    padding-top: 20px;
+.sidebar .sidebar-image {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 200px;
+    height: auto;
 
 }
 
 .sidebar {
+    background-color: #f2f3f2;
+    height: 100vh;
     padding: 10px;
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
 }
+
 
 .sidebar a {
     display: block;
     color: black;
-    /* Link text color */
     text-decoration: none;
-    /* Remove underline */
     padding: 10px;
-    /* Add padding to links */
 }
 
-.sidebar a:hover {
-    background-color: #ddd;
-
-}
 
 .sidebar-h2 {
     margin-top: 20px;
@@ -137,24 +136,6 @@ header {
     margin-right: 10px;
 }
 
-
-@media screen and (max-width: 767.98px) {
-    .sidebar {
-        width: 100%;
-        max-width: 300px;
-        position: static;
-        height: auto;
-        overflow-y: visible;
-        top: 0;
-
-    }
-
-    .main-content {
-        margin-left: 0;
-
-    }
-}
-
 .sidebar a {
     display: block;
     color: #333;
@@ -164,6 +145,7 @@ header {
 }
 
 .sidebar a.active {
+    margin-top: 24px;
     background-color: #23c55f;
     color: white;
     border-radius: 10px;
@@ -172,25 +154,11 @@ header {
 .sidebar a:hover:not(.active) {
     background-color: #23c55f;
     color: white;
-    border-radius: 10px;
-}
-
-/* Increase specificity for hover styles */
-.sidebar a:hover:not(.active) {
-    background-color: #ddd !important;
-    color: #333 !important;
-}
-
-/* Add !important to ensure these styles take precedence */
-.sidebar a.active,
-.sidebar a:hover.active {
-    background-color: #23c55f !important;
-    color: white !important;
     border-radius: 10px;
 }
 
 .sidebar a i {
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 .sidebar-h2 {
@@ -214,36 +182,84 @@ header {
     padding: 5px 10px;
 }
 
+
+
+@media screen and (max-width: 767.98px) {
+    .sidebar {
+        width: 100%;
+        max-width: 300px;
+        position: static;
+        height: auto;
+        overflow-y: visible;
+        top: 0;
+
+    }
+
+    .main-content {
+        margin-left: 0;
+
+    }
+}
+
+
+.sec-center {
+    margin-bottom: 15px;
+
+}
+
+.dropdown {
+    display: none;
+}
+
+.for-dropdown {
+    cursor: pointer;
+}
+
+.section-dropdown {
+    display: none;
+    padding-left: 20px;
+}
+
+.for-dropdown i {
+    margin-left: 5px;
+
+}
+
+.dropdown:checked~.section-dropdown {
+    display: block;
+
+}
+
+.dropdown:checked+.for-dropdown .uil-arrow-down {
+    transform: rotate(180deg);
+}
+
+.section-dropdown a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.section-dropdown a:hover {
+    background-color: #5b3f3f;
+}
+
+.h2 {
+    margin: 30px;
+    padding: 10px;
+    font-size: 20px;
+    color: #89888e;
+}
+
+.h2 span {
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
 .h3 {
     font-weight: bold;
     margin-left: 100px;
     font-size: 24px;
-}
-
-.graph1 {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-}
-
-.graph1 h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #333333;
-}
-
-/* Styling for paragraph */
-.graph1 p {
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: #666666;
-}
-
-/* Styling for canvas */
-.graph1 canvas {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
 }
