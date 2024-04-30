@@ -10,6 +10,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "chart.js": "^4.4.2"
+    "chart.js": "^4.4.2",
+    "example-package": "^0.0.1",
+    "graphlib": "^2.1.8"
   }
 }

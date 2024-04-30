@@ -182,24 +182,15 @@ header {
     padding: 5px 10px;
 }
 
-
-
-@media screen and (max-width: 767.98px) {
-    .sidebar {
-        width: 100%;
-        max-width: 300px;
-        position: static;
-        height: auto;
-        overflow-y: visible;
-        top: 0;
-
-    }
-
-    .main-content {
-        margin-left: 0;
-
-    }
+.graph-container {
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #ededf1;
 }
+
 
 
 .sec-center {
