@@ -1,6 +1,6 @@
 {
   "liveServer.settings.port": 5502,
-  "livePreview.defaultPreviewPath": "/dashboard.html",
+  "livePreview.defaultPreviewPath": "/metricts.html",
   "editor.defaultFormatter": "bradlc.vscode-tailwindcss",
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
