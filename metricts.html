@@ -65,7 +65,6 @@
         />
       </div>
     </header>
-    
 
     <div class="sidebar">
       <img src="Assets/images/SAF-MAIN-LOGO.png" alt="" class="sidebar-image" />
@@ -119,104 +118,119 @@
           <span> Hey Amina</span> - here's what's happening with your site today
         </h2>
 
-           <div class="graph-container">
-            <div class="box-1">
-               <canvas id="myChart" width="700" height="300">
-
-               </canvas>
-         
-              </div>
-             <div class="box-2">
-              <h1 style="font-size:21px; color: #19181a;">user Traffic</h1>
-              <p style="font-size: 2em;">251, 000</p>
-              <p style="font-size: 15px;">user per day</p>
-              
-            <div class="simple-bar-chart">
-            <div class="item" style="--clr: #049539; --val: 80"></div>
-
-            <div class="item" style="--clr: #049539; --val: 50"></div>
-
-            <div class="item" style="--clr: #049539; --val: 100"></div>
-
-            <div class="item" style="--clr: #049539; --val: 25"></div>
-
-            <div class="item" style="--clr: #049539; --val: 20"></div>
-
-            <div class="item" style="--clr: #049539; --val: 90"></div>
-
-            <div class="item" style="--clr: #049539; --val: 50"></div>
+        <div class="graph-container">
+          <div class="box-1">
+            <canvas id="linechart" width="400" height="150"> </canvas>
           </div>
-          <div>
-          <table>
-    <thead>
-        <tr>
-            <th>Country</th>
-            <th>Users</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>USA</td>
-            <td>120,000</td>
-        </tr>
-        <tr>
-            <td>UK</td>
-            <td>90,000</td>
-        </tr>
-        <tr>
-            <td>Canada</td>
-            <td>80,000</td>
-        </tr>
-        <tr>
-            <td>Australia</td>
-            <td>70,000</td>
-        </tr>
-    </tbody>
-</table>
-      </div>
-            </div>
-           </div>
 
-           
-               <div>
-        <h2 class="h2">
-        Where do your users visiting from?
-        </h2>
-        </div>
-        <div class="container1">
-            <div class="map">
-              
+          <div class="box-2">
+           <h2 class="user-traffic-heading">user Traffic <span>251,000</span></h2>
+
+
+            <p style="font-size: 15px">user per day</p>
+            <div>
+              <canvas id="myChart"></canvas>
             </div>
-             <div class="sessions">
-              <h2>Sessions by device</h2>
-             </div>
-           </div>
-           <script>
-    // Sample data
-    const labels = ['02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-    const data = {
-        labels: labels,
-        datasets: [{
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Top Counties</th>
+                    <th>Users</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kajiado</td>
+                    <td>98,875</td>
+                  </tr>
+                  <tr>
+                    <td>Nairobi</td>
+                    <td>72,764</td>
+                  </tr>
+                  <tr>
+                    <td>Nyeri</td>
+                    <td>56,333</td>
+                  </tr>
+                  <tr>
+                    <td>Machakos</td>
+                    <td>20, 006</td>
+                  </tr>
+                   <tr>
+                    <td>Kilifi</td>
+                    <td>16,871</td>
+                  </tr>
+                </tbody>
+              </table>
+               <a href="" class="link">View real time<i class="bi bi-arrow-right"></i></a>
+               </div>
+            
+          </div>
+        </div>
+
+        <div>
+          <h2 class="h2">Where do your users visiting from?</h2>
+        </div>
+
+        <div class="container1">
+          <div class="map"></div>
+
+
+          <div class="sessions">
+            <p>Sessions by device</p>
+            <hr>
+           <div id="chartContainer" style="width: 300px; height: 200px;">
+    <canvas id="sessionsChart"></canvas>
+</div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+       <script>
+           document.addEventListener("DOMContentLoaded", function () {
+          const ctx = document.getElementById("linechart").getContext("2d");
+          const labels = ['02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+           const data = {
+           labels: labels,
+          datasets: [{
             label: 'Website Audience Overview',
             backgroundColor: 'rgb(14,153,64)',
             borderColor: 'rgb(14,153,64)',
-            data: [10, 20, 30, 40, 50, 60],
+            data: [10, 43, 20, 30, 51, 70],
         }]
     };
 
-    // Configuration options
     const config = {
         type: 'line',
         data: data,
-        options: {}
+        options: {
+            scales: {
+                x: {
+                    grid: {
+                        display: false // Hide x-axis grid lines
+                    }
+                },
+                y: {
+                    grid: {
+                        display: false // Hide y-axis grid lines
+                    }
+                }
+            }
+        }
     };
 
-    // Create the chart
-    var myChart = new Chart(
-        document.getElementById('myChart'),
-        config
-    );
-</script>
+    var myChart = new Chart(document.getElementById('linechart'), config);
+});
 
+        </script>
+    </main>
+      <script src="linechart.js"></script>
+      <script src="dougnutgrapgh.js"></script>
+    </main>
   </body>
 </html>
