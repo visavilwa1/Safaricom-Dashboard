@@ -65,51 +65,32 @@
         />
       </div>
     </header>
-
     <div class="sidebar">
       <img src="Assets/images/SAF-MAIN-LOGO.png" alt="" class="sidebar-image" />
-      <a class="active" href="dashboard.html">
-        <i class="bi bi-house-door"></i>Dashboard
-      </a>
+      <a class="active" href="dashboard.html"
+        ><i class="bi bi-house-door"></i>Dashboard</a
+      >
       <h2 class="sidebar-h2">ANALYTICS</h2>
-      <div class="sec-center">
-        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-        <img src="Saf Icons/Analysis.svg" alt="" />
-        <label class="for-dropdown" for="dropdown" style="margin-right: 20px">
-          Metrics <i class="bi bi-caret-down-fill"></i>
-        </label>
-
-        <div class="section-dropdown" style="margin-top: 10px">
-          <a href="metrics.html?platform=application"
-            >Application <i class="uil uil-arrow-right"></i
-          ></a>
-          <a href="metrics.html?platform=website"
-            >Website <i class="uil uil-arrow-right"></i
-          ></a>
-          <a href="metrics.html?platform=ussd"
-            >USSD <i class="uil uil-arrow-right"></i
-          ></a>
-        </div>
-      </div>
-      <a href="campaings.html">
-        <img src="Saf Icons/Engagemnet.svg" alt="" />Campaigns
-      </a>
-      <a href="insights.html">
-        <img src="Saf Icons/Monetisation.svg" alt="" />Insights
-      </a>
-      <a href="integration.html">
-        <img src="Saf Icons/Retention.svg" alt="" />Integration
-      </a>
-      <a href="reports.html">
-        <img src="Saf Icons/Reports.svg" alt="" />Reports
-      </a>
-      <a href="competitor-analysis.html">
-        <img src="Saf Icons/Reports (1).svg" alt="" />Competitor Analysis
-      </a>
+      <a href="metricts.html"
+        ><img src="Saf Icons/Analysis.svg" alt="" />Metrics</a
+      >
+      <a href="campaings.html"
+        ><img src="Saf Icons/Engagemnet.svg" alt="" />Campaigns</a
+      >
+      <a href="insights.html"
+        ><img src="Saf Icons/Monetisation.svg" alt="" />insights</a
+      >
+      <a href="insights.html"
+        ><img src="Saf Icons/Retention.svg" alt="" />Integration</a
+      >
+      <a href="insights.html"
+        ><img src="Saf Icons/Reports.svg" alt="" />Reports</a
+      >
+      <a href="insights.html"
+        ><img src="Saf Icons/Reports (1).svg" alt="" />competitor Analysis</a
+      >
       <h2 class="sidebar-h2">USER</h2>
-      <a href="#">
-        <img src="Saf Icons/Demographics.svg" alt="" />Demographics
-      </a>
+      <a href=""><img src="Saf Icons/Demographics.svg" alt="" />Demograhics</a>
     </div>
 
     <main class="main-content">
@@ -124,8 +105,9 @@
           </div>
 
           <div class="box-2">
-           <h2 class="user-traffic-heading">user Traffic <span>251,000</span></h2>
-
+            <h2 class="user-traffic-heading">
+              user Traffic <span>251,000</span>
+            </h2>
 
             <p style="font-size: 15px">user per day</p>
             <div>
@@ -156,15 +138,16 @@
                     <td>Machakos</td>
                     <td>20, 006</td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>Kilifi</td>
                     <td>16,871</td>
                   </tr>
                 </tbody>
               </table>
-               <a href="" class="link">View real time<i class="bi bi-arrow-right"></i></a>
-               </div>
-            
+              <a href="" class="link"
+                >View real time<i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
           </div>
         </div>
 
@@ -173,62 +156,136 @@
         </div>
 
         <div class="container1">
-          <div class="map"></div>
+          <div class="map">
+            <img src="Assets/images/kenya.svg" alt="" srcset="" width="400" />
+          </div>
 
+          <div class="container">
+            <div class="row">
+              <h2>Top Counties</h2>
+              <div class="col-md-5">
+                <h3 class="progress-title">Nairobi - <span>86</span>%</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    style="width: 50%; background: #049539"
+                  ></div>
+                </div>
+
+                <h3 class="progress-title">Kiambu - <span>67</span>%</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    style="width: 75%; background: #049539"
+                  ></div>
+                </div>
+
+                <h3 class="progress-title">Garissa - <span>40</span>%</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    style="width: 75%; background: #049539"
+                  ></div>
+                </div>
+                <h3 class="progress-title">Kisumu - <span>24</span>%</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    style="width: 75%; background: #049539"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="sessions">
             <p>Sessions by device</p>
-            <hr>
-           <div id="chartContainer" style="width: 300px; height: 200px;">
-    <canvas id="sessionsChart"></canvas>
-</div>
+            <hr />
 
-
-
-
+            <div id="chartContainer" style="height: 200px">
+              <canvas id="sessionsChart"></canvas>
+            </div>
+            <div id="legendContainer"></div>
           </div>
         </div>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-       <script>
-           document.addEventListener("DOMContentLoaded", function () {
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
           const ctx = document.getElementById("linechart").getContext("2d");
-          const labels = ['02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-           const data = {
-           labels: labels,
-          datasets: [{
-            label: 'Website Audience Overview',
-            backgroundColor: 'rgb(14,153,64)',
-            borderColor: 'rgb(14,153,64)',
-            data: [10, 43, 20, 30, 51, 70],
-        }]
-    };
+          const labels = [
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+          ];
+          const data = {
+            labels: labels,
+            datasets: [
+              {
+                label: "Website Audience Overview",
+                backgroundColor: "rgb(14,153,64)",
+                borderColor: "rgb(14,153,64)",
+                data: [10, 43, 20, 30, 51, 70],
+              },
+            ],
+          };
 
-    const config = {
-        type: 'line',
-        data: data,
-        options: {
-            scales: {
+          const config = {
+            type: "line",
+            data: data,
+            options: {
+              scales: {
                 x: {
-                    grid: {
-                        display: false // Hide x-axis grid lines
-                    }
+                  grid: {
+                    display: false, // Hide x-axis grid lines
+                  },
                 },
                 y: {
-                    grid: {
-                        display: false // Hide y-axis grid lines
-                    }
+                  grid: {
+                    display: false, // Hide y-axis grid lines
+                  },
+                },
+              },
+            },
+          };
+
+          var myChart = new Chart(document.getElementById("linechart"), config);
+        });
+      </script>
+
+      <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-1.12.0.min.js"
+      ></script>
+      <script>
+        $(document).ready(function () {
+          $(".progress-title > span").each(function () {
+            $(this)
+              .prop("Counter", 0)
+              .animate(
+                {
+                  Counter: $(this).text(),
+                },
+                {
+                  duration: 1500,
+                  easing: "swing",
+                  step: function (now) {
+                    $(this).text(Math.ceil(now));
+                  },
                 }
-            }
-        }
-    };
-
-    var myChart = new Chart(document.getElementById('linechart'), config);
-});
-
-        </script>
-    </main>
+              );
+          });
+        });
+      </script>
       <script src="linechart.js"></script>
       <script src="dougnutgrapgh.js"></script>
     </main>

@@ -196,7 +196,7 @@ header {
     border-radius: 10px;
     border: 2px solid #f1f0f3;
     margin-left: 50px;
-    height: 400px;
+    height: 300px !important;
 
 }
 
@@ -219,7 +219,7 @@ header {
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #ededf1;
-    height: 435px;
+    height: 370px !important;
 
 
 }
@@ -270,14 +270,22 @@ tr:hover {
 }
 
 .map {
-    width: 800px;
+    width: 550px;
     background-color: #ffffff;
     padding: 40px;
     border-radius: 10px;
     margin-top: 20px;
-    border: 1px solid #ededf1;
     margin-left: 40px;
+    height: 400px !important;
+}
 
+.container {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 250px !important;
 }
 
 .sessions {
@@ -287,6 +295,8 @@ tr:hover {
     border-radius: 10px;
     margin-top: 20px;
     border: 1px solid #ededf1;
+    height: 370px !important;
+
 
 }
 
@@ -352,6 +362,47 @@ tr:hover {
     font-size: 24px;
 }
 
-.sessions {
-    height: 200px;
+
+
+
+.legend-item {
+    margin-bottom: 5px;
+}
+
+.legend-item input[type="checkbox"] {
+    margin-right: 5px;
+    color: #12c344;
+}
+
+#legendContainer {
+    align-items: center;
+}
+
+
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-5 {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.progress-title {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.progress-bar {
+    height: 20px;
+    border-radius: 10px;
 }
