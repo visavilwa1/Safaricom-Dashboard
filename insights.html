@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-    <link rel="stylesheet" href="metrics.css" />
+    <link rel="stylesheet" href="insights.css" />
   </head>
   <body>
     <!-- Header Section -->
@@ -60,35 +60,210 @@
 
     <div class="sidebar">
       <img src="Assets/images/SAF-MAIN-LOGO.png" alt="" class="sidebar-image" />
-      <a class="active" href="dashboard.html">
-        <i class="bi bi-house-door"></i>Dashboard
-      </a>
+      <a class="active" href="dashboard.html"
+        ><i class="bi bi-house-door"></i>Dashboard</a
+      >
       <h2 class="sidebar-h2">ANALYTICS</h2>
-      <a href="campaigns.html">
-        <img src="Saf Icons/Engagement.svg" alt="" />Campaigns
-      </a>
-
-      <a href="campaigns.html">
-        <img src="Saf Icons/Engagement.svg" alt="" />Campaigns
-      </a>
-      <a href="insights.html">
-        <img src="Saf Icons/Monetization.svg" alt="" />Insights
-      </a>
-      <a href="integration.html">
-        <img src="Saf Icons/Retention.svg" alt="" />Integration
-      </a>
-      <a href="reports.html">
-        <img src="Saf Icons/Reports.svg" alt="" />Reports
-      </a>
-      <a href="competitor-analysis.html">
-        <img src="Saf Icons/Reports (1).svg" alt="" />Competitor Analysis
-      </a>
+      <a href="metricts.html"
+        ><img src="Saf Icons/Analysis.svg" alt="" />Metrics</a
+      >
+      <a href="campaings.html"
+        ><img src="Saf Icons/Engagemnet.svg" alt="" />Campaigns</a
+      >
+      <a href="insights.html"
+        ><img src="Saf Icons/Monetisation.svg" alt="" />insights</a
+      >
+      <a href="intregration.html"
+        ><img src="Saf Icons/Retention.svg" alt="" />Integration</a
+      >
+      <a href="reports.html"
+        ><img src="Saf Icons/Reports.svg" alt="" />Reports</a
+      >
+      <a href="competitor.html"
+        ><img src="Saf Icons/Reports (1).svg" alt="" />competitor Analysis</a
+      >
       <h2 class="sidebar-h2">USER</h2>
-      <a href="#">
-        <img src="Saf Icons/Demographics.svg" alt="" />Demographics
-      </a>
+      <a href=""><img src="Saf Icons/Demographics.svg" alt="" />Demograhics</a>
     </div>
 
-    <main class="main-content"></main>
+    <main class="main-content">
+      <div>
+        <h2 class="h2">
+          <span> Hey Amina</span> - here's what's happening with your site today
+        </h2>
+
+           <div class="graph-container">
+          <div class="box-1">
+            <canvas id="linechart" width="400" height="150"> </canvas>
+          </div>
+
+          <div class="box-2">
+            <h2 class="user-traffic-heading">
+              user Traffic <span>251,000</span>
+            </h2>
+
+            <p style="font-size: 15px">user per day</p>
+            <div>
+              <canvas id="myChart"></canvas>
+            </div>
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Top Counties</th>
+                    <th>Users</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kajiado</td>
+                    <td>98,875</td>
+                  </tr>
+                  <tr>
+                    <td>Nairobi</td>
+                    <td>72,764</td>
+                  </tr>
+                  <tr>
+                    <td>Nyeri</td>
+                    <td>56,333</td>
+                  </tr>
+                  <tr>
+                    <td>Machakos</td>
+                    <td>20, 006</td>
+                  </tr>
+                  <tr>
+                    <td>Kilifi</td>
+                    <td>16,871</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="" class="link"
+                >View real time<i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+          <div>
+          <h2 class="h2">Where do your users visiting from?</h2>
+        </div>
+          <div class="container1">
+          <div class="map">
+            <h2> Users by County</h2>
+            <img src="Assets/images/kenya.svg" alt="" srcset="" width="400" />
+          </div>
+
+          <div class="row1">
+            <div class="row">
+              <h2>Top Counties</h2>
+              <div class="col-md-5">
+                <h3 class="progress-title">Nairobi - <span>86</span>%</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    style="width: 50%; background: #049539"
+                  ></div>
+                </div>
+
+                <h3 class="progress-title">Kiambu - <span>67</span>%</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    style="width: 75%; background: #049539"
+                  ></div>
+                </div>
+
+                <h3 class="progress-title">Garissa - <span>40</span>%</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    style="width: 75%; background: #049539"
+                  ></div>
+                </div>
+                <h3 class="progress-title">Kisumu - <span>24</span>%</h3>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    style="width: 75%; background: #049539"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="insights">
+            <h2 style="font-size: 1em; font-weight: bold;">Insights</h2>
+            <p style="font-weight: bold;">AUTOMATED INSIGHT <br >Perfomance week-over-week
+            <p style="color: #bababb;"> From the 1st to the 7th of March,2024</p></p>
+            <hr />
+            <p style="font-weight: bold;">AUTOMATED INSIGHT <br>
+              Sessions Per Week were 359% higher than average for the compaign "(referral)" from source "adido- digital.co.ke"
+            </p>
+              <a href="" class="link"
+                >View real time<i class="bi bi-arrow-right"></i
+              ></a>
+         
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+        
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="linechart.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const ctx = document.getElementById("linechart").getContext("2d");
+          const labels = [
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+          ];
+          const data = {
+            labels: labels,
+            datasets: [
+              {
+                label: "Website Audience Overview",
+                backgroundColor: "rgb(14,153,64)",
+                borderColor: "rgb(14,153,64)",
+                data: [10, 33,43, 53, 63, 70],
+              },
+            ],
+          };
+
+          const config = {
+            type: "line",
+            data: data,
+            options: {
+              scales: {
+                x: {
+                  grid: {
+                    display: false, 
+                  },
+                },
+                y: {
+                  grid: {
+                    display: false, 
+                  },
+                },
+              },
+            },
+          };
+
+          var myChart = new Chart(document.getElementById("linechart"), config);
+        });
+      </script>
   </body>
 </html>

@@ -332,10 +332,10 @@ canvas {
   margin-top: 10px;
   text-decoration: none;
   color: #007bff;
-  /* Link color */
+
 }
 
-/* Styles for user traffic chart container */
+
 #userTrafficChartContainer {
   margin-top: 20px;
 }
